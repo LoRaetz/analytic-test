@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import moment from 'moment'
 import {
-    BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Customized, ReferenceArea
+    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceArea
 } from 'recharts';
 
 import * as data from './data'
@@ -10,7 +10,7 @@ import './App.css'
 
 const CustomizedAxisTick = (props) => {
     const {
-        x, y, stroke, payload, index, width
+        x, y, payload, index
     } = props
 
     return (
